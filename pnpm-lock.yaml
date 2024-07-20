@@ -9,37 +9,37 @@ importers:
   .:
     dependencies:
       '@emotion/react':
-        specifier: ^11.10.5
+        specifier: ^11.11.4
         version: 11.11.4(@types/react@18.0.25)(react@18.3.1)
       '@emotion/server':
-        specifier: ^11.10.0
+        specifier: ^11.11.0
         version: 11.11.0
       '@hookform/resolvers':
-        specifier: ^2.9.10
+        specifier: ^2.9.11
         version: 2.9.11(react-hook-form@7.52.1(react@18.3.1))
       '@mantine/core':
-        specifier: ^5.8.2
+        specifier: ^5.10.5
         version: 5.10.5(@emotion/react@11.11.4(@types/react@18.0.25)(react@18.3.1))(@mantine/hooks@5.10.5(react@18.3.1))(@types/react@18.0.25)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@mantine/dropzone':
-        specifier: ^5.8.2
+        specifier: ^5.10.5
         version: 5.10.5(@mantine/core@5.10.5(@emotion/react@11.11.4(@types/react@18.0.25)(react@18.3.1))(@mantine/hooks@5.10.5(react@18.3.1))(@types/react@18.0.25)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@mantine/hooks@5.10.5(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@mantine/hooks':
-        specifier: ^5.8.2
+        specifier: ^5.10.5
         version: 5.10.5(react@18.3.1)
       '@mantine/modals':
-        specifier: ^5.8.2
+        specifier: ^5.10.5
         version: 5.10.5(@mantine/core@5.10.5(@emotion/react@11.11.4(@types/react@18.0.25)(react@18.3.1))(@mantine/hooks@5.10.5(react@18.3.1))(@types/react@18.0.25)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@mantine/hooks@5.10.5(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@mantine/next':
-        specifier: ^5.8.2
+        specifier: ^5.10.5
         version: 5.10.5(@emotion/react@11.11.4(@types/react@18.0.25)(react@18.3.1))(@emotion/server@11.11.0)(next@14.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@mantine/nprogress':
-        specifier: ^5.8.2
+        specifier: ^5.10.5
         version: 5.10.5(@mantine/core@5.10.5(@emotion/react@11.11.4(@types/react@18.0.25)(react@18.3.1))(@mantine/hooks@5.10.5(react@18.3.1))(@types/react@18.0.25)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@mantine/hooks@5.10.5(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@next-auth/prisma-adapter':
         specifier: ^1.0.7
         version: 1.0.7(@prisma/client@4.16.2(prisma@4.16.2))(next-auth@4.24.7(next@14.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@prisma/client':
-        specifier: ^4.6.1
+        specifier: ^4.16.2
         version: 4.16.2(prisma@4.16.2)
       '@radix-ui/react-avatar':
         specifier: ^1.1.0
@@ -54,10 +54,10 @@ importers:
         specifier: ^1.2.1
         version: 1.2.1(@types/react-dom@18.0.9)(@types/react@18.0.25)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@tabler/icons':
-        specifier: ^1.112.0
+        specifier: ^1.119.0
         version: 1.119.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@tanstack/react-query':
-        specifier: ^4.16.1
+        specifier: ^4.36.1
         version: 4.36.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@trpc/client':
         specifier: 10.0.0-rc.8
@@ -75,13 +75,13 @@ importers:
         specifier: ^6.7.2
         version: 6.7.2(next@14.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(uploadthing@6.13.2(next@14.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(tailwindcss@3.4.6(ts-node@10.9.2(@types/node@18.11.9)(typescript@4.9.3))))
       argon2:
-        specifier: ^0.30.2
+        specifier: ^0.30.3
         version: 0.30.3
       class-variance-authority:
         specifier: ^0.7.0
         version: 0.7.0
       cloudinary:
-        specifier: ^1.32.0
+        specifier: ^1.41.3
         version: 1.41.3
       clsx:
         specifier: ^2.1.1
@@ -96,19 +96,19 @@ importers:
         specifier: ^14.2.5
         version: 14.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       next-auth:
-        specifier: ^4.17.0
+        specifier: ^4.24.7
         version: 4.24.7(next@14.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-easy-crop:
-        specifier: ^4.6.2
+        specifier: ^4.7.5
         version: 4.7.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-hook-form:
-        specifier: ^7.39.4
+        specifier: ^7.52.1
         version: 7.52.1(react@18.3.1)
       sharp:
-        specifier: ^0.31.2
+        specifier: ^0.31.3
         version: 0.31.3
       stripe:
-        specifier: ^11.1.0
+        specifier: ^11.18.0
         version: 11.18.0
       tailwind-merge:
         specifier: ^2.4.0
@@ -123,11 +123,11 @@ importers:
         specifier: ^6.13.2
         version: 6.13.2(next@14.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(tailwindcss@3.4.6(ts-node@10.9.2(@types/node@18.11.9)(typescript@4.9.3)))
       zod:
-        specifier: ^3.19.1
+        specifier: ^3.23.8
         version: 3.23.8
     devDependencies:
       '@types/cookies':
-        specifier: ^0.7.7
+        specifier: ^0.7.10
         version: 0.7.10
       '@types/node':
         specifier: 18.11.9
@@ -139,7 +139,7 @@ importers:
         specifier: 18.0.9
         version: 18.0.9
       autoprefixer:
-        specifier: ^10.4.13
+        specifier: ^10.4.19
         version: 10.4.19(postcss@8.4.39)
       eslint:
         specifier: 8.28.0
@@ -148,19 +148,19 @@ importers:
         specifier: 14.2.5
         version: 14.2.5(eslint@8.28.0)(typescript@4.9.3)
       postcss:
-        specifier: ^8.4.19
+        specifier: ^8.4.39
         version: 8.4.39
       prettier:
         specifier: 2.7.1
         version: 2.7.1
       prisma:
-        specifier: ^4.6.1
+        specifier: ^4.16.2
         version: 4.16.2
       tailwindcss:
-        specifier: ^3.2.4
+        specifier: ^3.4.6
         version: 3.4.6(ts-node@10.9.2(@types/node@18.11.9)(typescript@4.9.3))
       tsx:
-        specifier: ^3.12.1
+        specifier: ^3.14.0
         version: 3.14.0
       typescript:
         specifier: 4.9.3
@@ -4994,7 +4994,7 @@ snapshots:
       eslint: 8.28.0
       eslint-import-resolver-node: 0.3.9
       eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@5.62.0(eslint@8.28.0)(typescript@4.9.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@8.28.0))(eslint@8.28.0)
-      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@5.62.0(eslint@8.28.0)(typescript@4.9.3))(eslint-import-resolver-typescript@3.6.1)(eslint@8.28.0)
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@5.62.0(eslint@8.28.0)(typescript@4.9.3))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@5.62.0(eslint@8.28.0)(typescript@4.9.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@8.28.0))(eslint@8.28.0))(eslint@8.28.0)
       eslint-plugin-jsx-a11y: 6.9.0(eslint@8.28.0)
       eslint-plugin-react: 7.34.4(eslint@8.28.0)
       eslint-plugin-react-hooks: 4.6.2(eslint@8.28.0)
@@ -5018,7 +5018,7 @@ snapshots:
       enhanced-resolve: 5.17.0
       eslint: 8.28.0
       eslint-module-utils: 2.8.1(@typescript-eslint/parser@5.62.0(eslint@8.28.0)(typescript@4.9.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@5.62.0(eslint@8.28.0)(typescript@4.9.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@8.28.0))(eslint@8.28.0))(eslint@8.28.0)
-      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@5.62.0(eslint@8.28.0)(typescript@4.9.3))(eslint-import-resolver-typescript@3.6.1)(eslint@8.28.0)
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@5.62.0(eslint@8.28.0)(typescript@4.9.3))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@5.62.0(eslint@8.28.0)(typescript@4.9.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@8.28.0))(eslint@8.28.0))(eslint@8.28.0)
       fast-glob: 3.3.2
       get-tsconfig: 4.7.5
       is-core-module: 2.15.0
@@ -5040,7 +5040,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.29.1(@typescript-eslint/parser@5.62.0(eslint@8.28.0)(typescript@4.9.3))(eslint-import-resolver-typescript@3.6.1)(eslint@8.28.0):
+  eslint-plugin-import@2.29.1(@typescript-eslint/parser@5.62.0(eslint@8.28.0)(typescript@4.9.3))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@5.62.0(eslint@8.28.0)(typescript@4.9.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@8.28.0))(eslint@8.28.0))(eslint@8.28.0):
     dependencies:
       array-includes: 3.1.8
       array.prototype.findlastindex: 1.2.5
