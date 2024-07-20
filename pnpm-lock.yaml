@@ -132,6 +132,9 @@ importers:
         specifier: ^3.23.8
         version: 3.23.8
     devDependencies:
+      '@effect/schema':
+        specifier: 0.68.26
+        version: 0.68.26(effect@3.4.5)
       '@types/cookies':
         specifier: ^0.7.10
         version: 0.7.10
@@ -247,6 +250,11 @@ packages:
     resolution: {integrity: sha512-UWJsFXzeYTBQYnftwI1KR2uaxIZ8fk+kffDS7BnJwnGjPPgODq3/AzeoBDSu1MAlnwBKOz+QRdMuSMxrT/pHig==}
     peerDependencies:
       effect: ^3.4.5
+
+  '@effect/schema@0.68.26':
+    resolution: {integrity: sha512-o1O/ZmlHXRe9t548YrQ9sudjRWJqCtsU9KnQHzvZm5pHSc4reuZVQufCXctcR0aETf9OFOYUuETrxjEQehq/Lg==}
+    peerDependencies:
+      effect: ^3.5.6
 
   '@emotion/babel-plugin@11.11.0':
     resolution: {integrity: sha512-m4HEDZleaaCH+XgDDsPF15Ht6wTLsgDTeR3WYj9Q/k76JtWhrJjcP4+/XlG8LGT/Rol9qUfOIztXeA84ATpqPQ==}
@@ -3515,6 +3523,11 @@ snapshots:
       '@jridgewell/trace-mapping': 0.3.9
 
   '@effect/schema@0.68.12(effect@3.4.5)':
+    dependencies:
+      effect: 3.4.5
+      fast-check: 3.20.0
+
+  '@effect/schema@0.68.26(effect@3.4.5)':
     dependencies:
       effect: 3.4.5
       fast-check: 3.20.0

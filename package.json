@@ -57,6 +57,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@effect/schema":"0.68.26",
     "@types/cookies": "^0.7.10",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
