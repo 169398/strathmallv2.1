@@ -1,10 +1,10 @@
 {
-  "name": "v41-bears-team-32",
+  "name": "strathmall",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "pnpm build",
     "start": "next start",
     "lint": "next lint",
     "netlify-build": "prisma generate && prisma migrate deploy && prisma db seed && next build",
@@ -44,6 +44,8 @@
     "lucide-react": "^0.411.0",
     "next": "^14.2.5",
     "next-auth": "^4.24.7",
+    "patch-package": "^8.0.0",
+    "postinstall-postinstall": "^2.1.0",
     "react-easy-crop": "^4.7.5",
     "react-hook-form": "^7.52.1",
     "sharp": "^0.31.3",
