@@ -17,7 +17,7 @@ const Footer = () => {
     <footer className="bg-white flex-grow-0">
       <MaxWidthWrapper>
         <div className="border-t border-gray-200">
-          {pathsToMinimize.includes(pathname) ? null : (
+          {pathsToMinimize.includes(pathname ?? '') ? null : (
             <div className="pb-8 pt-16">
               <div className="flex justify-center">
                 <Image
@@ -31,7 +31,7 @@ const Footer = () => {
             </div>
           )}
 
-          {pathsToMinimize.includes(pathname) ? null : (
+          {pathsToMinimize.includes(pathname ?? '') ? null : (
             <div>
               <div className="relative flex items-center px-6 py-6 sm:py-8 lg:mt-0">
                 <div className="absolute inset-0 overflow-hidden rounded-lg">

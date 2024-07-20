@@ -66,9 +66,9 @@ export default async function Navbar() {
 
                   {session && (
                     <>
-                      <UserAccountNav
+                      {/* <UserAccountNav
                         user={{ ...session.user, hasShop: true }}
-                      />
+                      /> */}
                     </>
                   )}
                   <div className="ml-4 flow-root lg:ml-6">
