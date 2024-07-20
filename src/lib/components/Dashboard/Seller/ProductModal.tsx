@@ -185,7 +185,7 @@ function ProductModal({ opened, setOpened }: ProductModalProps) {
                   onChange={field.onChange}
                   size="lg"
                   label="Price"
-                  placeholder="$20"
+                  placeholder="ksh20"
                   precision={2}
                   classNames={classes}
                   mt={15}

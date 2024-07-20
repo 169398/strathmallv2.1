@@ -19,7 +19,7 @@ const PaymentCheckPage: PageWithLayout = () => {
   return (
     <>
       <Head>
-        <title>Payment | Zavy</title>
+        <title>Payment | StrathMall</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       {isLoading && (

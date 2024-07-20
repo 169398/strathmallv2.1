@@ -11,7 +11,7 @@ const SellerProducts: PageWithLayout = () => {
   return (
     <>
       <Head>
-        <title>Zavy | My Products</title>
+        <title>StrathMall | My Products</title>
         <meta name="description" content="An ecommerce store" />
       </Head>
 

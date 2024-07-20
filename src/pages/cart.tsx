@@ -32,7 +32,7 @@ const CartPage: PageWithLayout = () => {
   return (
     <div className="p-6 min-h-screen min-w-full text-white">
       <Head>
-        <title>My Cart | Zavy</title>
+        <title>My Cart | StrathMall</title>
         <meta name="description" content="An ecommerce store" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>

@@ -165,7 +165,7 @@ export function DashboardLayout({ children }: React.PropsWithChildren<{}>) {
           className={classes.navbar}
         >
           <Navbar.Section>
-            <Text weight={500} size="sm" className={classes.title} color="dimmed" mb="xs">
+            <Text weight={500} size="sm" className={classes.title} color="blue" mb="xs">
               {session?.user?.name}
             </Text>
 
@@ -206,13 +206,15 @@ export function DashboardLayout({ children }: React.PropsWithChildren<{}>) {
                   setScrollLocked((c) => !c);
                 }}
                 size="sm"
-                color={theme.colors.gray[6]}
+                color={theme.colors.blue[6]}
                 mr="xl"
               />
             </MediaQuery>
 
             <Link href="/">
-              <Text className="font-logo text-4xl">Zavy</Text>
+              <Text className="font-logo text-4xl text-blue-600  ">
+                StrathMall
+              </Text>
             </Link>
           </div>
         </Header>

@@ -11,7 +11,7 @@ const BuyerAddresses: PageWithLayout = () => {
   return (
     <>
       <Head>
-        <title>Zavy | Address Book</title>
+        <title>StrathMall | Address Book</title>
         <meta name="description" content="An ecommerce store" />
       </Head>
 

@@ -33,7 +33,7 @@ const useStyles = createStyles((theme) => ({
     fontWeight: 400,
 
     '&:focus': {
-      borderColor: theme.colors.brown[6]
+      borderColor: theme.colors.blue[6]
     }
   }
 }));
@@ -106,7 +106,7 @@ function ControlBar() {
               component={Link}
               href="/login"
               leftIcon={<IconBolt size="16px" />}
-              className="text-[16px] font-medium rounded-lg hidden lg:block bg-brown-600 hover:bg-brown-700"
+              className="text-[16px] font-medium rounded-lg hidden lg:block bg-blue-600 hover:bg-blue-700"
               variant="filled"
               size="sm"
             >
@@ -121,7 +121,7 @@ function ControlBar() {
             <Button
               onClick={() => setModalOpened(true)}
               leftIcon={<IconBolt size="16px" />}
-              className="text-[16px] font-medium rounded-lg hidden lg:block hover:bg-brown-50"
+              className="text-[16px] font-medium rounded-lg hidden lg:block hover:bg-blue-50"
               variant="outline"
               size="sm"
             >
@@ -142,7 +142,7 @@ function ControlBar() {
                 <Menu.Item component={Link} href="/dashboard/buyer" icon={<IconHome size={14} />}>
                   Dashboard
                 </Menu.Item>
-                <Menu.Item onClick={() => signOut()} icon={<IconLogout size={14} />}>
+                <Menu.Item onClick={() => signOut()} icon={<IconLogout size={14}  />}>
                   Logout
                 </Menu.Item>
               </Menu.Dropdown>

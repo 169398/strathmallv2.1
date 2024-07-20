@@ -11,8 +11,8 @@ const Home: PageWithLayout = () => {
   return (
     <div className="p-6 min-h-screen min-w-full text-white">
       <Head>
-        <title>Zavy</title>
-        <meta name="description" content="An ecommerce store" />
+        <title>StrathMall</title>
+        <meta name="description" content="The marketplace for all university and local sellers" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 

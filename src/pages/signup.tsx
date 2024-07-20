@@ -29,7 +29,7 @@ const SignUp: PageWithLayout = () => {
   return (
     <>
       <Head>
-        <title>Signup • Zavy</title>
+        <title>Signup • StrathMall</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <AuthForm isForSignUp={true} title="Sign Up" buttonTitle="Sign Up" />

@@ -24,7 +24,7 @@ function AddressBook() {
       />
       <div className="flex gap-4 items-center flex-wrap">
         {!addresses.isLoading && (
-          <div className="w-64 h-56 border-dashed border-2 border-brown-200 rounded-xl flex items-center justify-center text-brown-600">
+          <div className="w-64 h-56 border-dashed border-2 border-blue-200 rounded-xl flex items-center justify-center text-blue-600">
             <Button
               onClick={() => setOpened(true)}
               leftIcon={<IconPlus size="15px" />}

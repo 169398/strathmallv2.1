@@ -24,7 +24,7 @@ const ProductCategoryPage: PageWithLayout = () => {
   return (
     <div className="p-6 min-h-screen min-w-full text-white">
       <Head>
-        <title>{label} | Zavy</title>
+        <title>{label} | StrathMall</title>
         <meta name="description" content="An ecommerce store" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>

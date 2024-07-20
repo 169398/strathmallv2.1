@@ -30,7 +30,7 @@ function MyProducts() {
       />
       <div className="flex gap-8 items-center flex-wrap">
         {!isLoading && (
-          <div className="w-[337px] h-[583px] border-dashed border-2 border-brown-200 rounded-xl flex items-center justify-center text-brown-600">
+          <div className="w-[337px] h-[583px] border-dashed border-2 border-blue-200 rounded-xl flex items-center justify-center text-blue-600">
             <Button
               onClick={() => setOpened(true)}
               leftIcon={<IconPlus size="15px" />}

@@ -118,7 +118,7 @@ export function SideNavBar({
     >
       <Navbar.Section grow>
         <Group className={classes.header} position="right">
-          <Text className="font-logo text-3xl text-white">Zavy</Text>
+          <Text className="font-logo text-3xl text-blue-600">StrathMall</Text>
         </Group>
         {links}
       </Navbar.Section>

@@ -11,7 +11,7 @@ const SearchPage: PageWithLayout = () => {
   return (
     <div className="p-6 min-h-screen min-w-full text-white">
       <Head>
-        <title>Searched For: {text} | Zavy</title>
+        <title>Searched For: {text} | StrathMall</title>
         <meta name="description" content="An ecommerce store" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>

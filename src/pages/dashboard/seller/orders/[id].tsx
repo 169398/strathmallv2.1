@@ -21,7 +21,7 @@ const SellerOrderPage: PageWithLayout = () => {
   return (
     <>
       <Head>
-        <title>Buyer Order | Zavy</title>
+        <title>Buyer Order | StrathMall</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       {data && (

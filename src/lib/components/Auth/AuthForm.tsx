@@ -168,7 +168,7 @@ export function AuthForm({ title, buttonTitle, isForSignUp }: LoginFormProps) {
       <Paper className={classes.form} radius={0} p={30}>
         <Title order={2} className={classes.title} align="center" mt="md" mb={50}>
           <Link href="/">
-            <span className="font-logo text-6xl">Zavy</span>
+            <span className="font-logo text-6xl ">StrathMall</span>
           </Link>
         </Title>
 

@@ -90,7 +90,7 @@ export const Item = memo(
           {/* </Group> */}
         </td>
         <td>
-          <Text size="lg">${price}</Text>
+          <Text size="lg">ksh{price}</Text>
         </td>
         <td>
           <Group spacing={10} position="right">

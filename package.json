@@ -44,8 +44,6 @@
     "lucide-react": "^0.411.0",
     "next": "^14.2.5",
     "next-auth": "^4.17.0",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
     "react-easy-crop": "^4.6.2",
     "react-hook-form": "^7.39.4",
     "sharp": "^0.31.2",

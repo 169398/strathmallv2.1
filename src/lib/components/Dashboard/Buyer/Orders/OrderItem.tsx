@@ -107,7 +107,7 @@ function OrderItem({
       )}
       <div className="flex justify-between mt-4 items-center flex-col lg:flex-row">
         {totalPrice && (
-          <Text className="text-md pl-3 flex gap-2 text-brown-500">
+          <Text className="text-md pl-3 flex gap-2 text-blue-500">
             <IconFileInvoice stroke={1.5} /> ${(+totalPrice / 100).toString()}
           </Text>
         )}

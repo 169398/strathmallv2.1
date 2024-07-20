@@ -1,4 +1,4 @@
-import '@/lib/styles/globals.css';
+import '@/styles/globals.css';
 import { SessionProvider } from 'next-auth/react';
 import { Session } from 'next-auth';
 import { MantineProvider, ColorSchemeProvider, ColorScheme } from '@mantine/core';
@@ -47,7 +47,7 @@ function App({ Component, pageProps: { session, ...pageProps } }: Props) {
               '#180903'
             ]
           },
-          primaryColor: 'brown',
+          primaryColor: 'blue',
           primaryShade: 6,
           defaultRadius: 12,
           globalStyles: (theme) => ({

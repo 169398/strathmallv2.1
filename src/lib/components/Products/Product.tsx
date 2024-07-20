@@ -85,7 +85,7 @@ const Product = ({ id, title, image, description, category, price, stock }: Prod
 
             <div className="p-5 flex ">
               <Text className="text-4xl" mt="xs" mb="md">
-                $ {price}
+                ksh {price}
               </Text>
             </div>
 

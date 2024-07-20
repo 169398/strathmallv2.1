@@ -7,7 +7,7 @@ function NavBar({ className }: { className?: string }) {
       {pages.map((page, i) => (
         <Link
           href={page.link}
-          className={'px-5 cursor-pointer hover:underline hover:decoration-green-600'}
+          className={'px-5 cursor-pointer hover:underline hover:decoration-blue-600'}
           key={i}
         >
           {page.label.toUpperCase()}

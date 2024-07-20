@@ -164,7 +164,7 @@ function EditProductModal({ opened, setOpened, data }: EditProductModalProps) {
       children: (
         <Text size="sm">
           Are you sure you want to delete your product? This action is destructive and will remove
-          your product fom zavy&apos;s marketplace.
+          your product fom StrathMall&apos;s marketplace.
         </Text>
       ),
       labels: { confirm: 'Delete Product', cancel: "No don't delete it" },
@@ -192,7 +192,7 @@ function EditProductModal({ opened, setOpened, data }: EditProductModalProps) {
         <div className="w-full md:w-auto">
           <form onSubmit={handleSubmit(productUpdate)}>
             {imageEditMode && src && (
-              <Alert icon={<IconAlertCircle size={16} />} title="Image Crop Mode" color="green">
+              <Alert icon={<IconAlertCircle size={16} />} title="Image Crop Mode" color="blue">
                 In crop mode, save to continue or discard by closing
               </Alert>
             )}
@@ -254,7 +254,7 @@ function EditProductModal({ opened, setOpened, data }: EditProductModalProps) {
                   onChange={field.onChange}
                   size="lg"
                   label="Price"
-                  placeholder="$20"
+                  placeholder="ksh20"
                   precision={2}
                   classNames={classes}
                   mt={15}
@@ -284,7 +284,7 @@ function EditProductModal({ opened, setOpened, data }: EditProductModalProps) {
             />
 
             <DropzoneButton onDrop={handleImageUpload} />
-            <Text color={src ? 'green' : 'red'} size="md" mt={15}>
+            <Text color={src ? 'blue' : 'red'} size="md" mt={15}>
               {errors.image?.message && !src && <>Product must have an image</>}
             </Text>
 
