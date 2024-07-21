@@ -1,3 +1,6 @@
+'use client';
+
+
 import Head from 'next/head';
 import { PageWithLayout } from '@/lib/types/page';
 import { ReactElement } from 'react';
