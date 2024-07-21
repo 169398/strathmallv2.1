@@ -3,12 +3,7 @@ import { getBuyerId, getCartId } from '@/server/functions/identity';
 import { getSelectedCartItems, getCartItemsPrice } from '@/server/functions/cart';
 import { getProductStock } from '../functions/product';
 import { z } from 'zod';
-
-const quantityInput = z.object({
-  id: z.number(),
-  productId: z.string(),
-  value: z.number().min(1)
-});
+import { quantityInput } from '../schema';
 
 export const cartRouter = router({
   getItemCount: protectedProcedure.query(async ({ ctx }) => {
@@ -27,7 +22,6 @@ export const cartRouter = router({
 
     return items._sum.itemCount ?? 0;
   }),
-
   getCartItems: protectedProcedure.query(async ({ ctx }) => {
     let cartId = await getCartId(ctx);
     if (!cartId) return null;
@@ -66,9 +60,9 @@ export const cartRouter = router({
 
     return cart?.bags;
   }),
-
   getSelectedCartItems: protectedProcedure.query(async ({ ctx }) => {
     let bags = await getSelectedCartItems(ctx);
+
     return bags;
   }),
 
@@ -118,7 +112,6 @@ export const cartRouter = router({
 
       return 'stock_limit';
     }),
-
   toggleBagSelect: protectedProcedure
     .input(z.object({ bagId: z.number(), isSelected: z.boolean() }))
     .mutation(async ({ input, ctx }) => {
@@ -138,7 +131,6 @@ export const cartRouter = router({
 
       return selected;
     }),
-
   toggleAllBagsSelect: protectedProcedure
     .input(z.object({ shouldDeselect: z.boolean().optional() }))
     .mutation(async ({ input, ctx }) => {
@@ -159,12 +151,11 @@ export const cartRouter = router({
 
       return selected;
     }),
-
   getCartItemsPrice: protectedProcedure.query(async ({ ctx }) => {
     let price = await getCartItemsPrice(ctx);
+
     return price;
   }),
-
   incrementItemCount: protectedProcedure.input(quantityInput).mutation(async ({ input, ctx }) => {
     let cartId = await getCartId(ctx);
     if (!cartId) return null;
@@ -189,7 +180,6 @@ export const cartRouter = router({
 
     return 'stock_limit';
   }),
-
   decrementItemCount: protectedProcedure
     .input(z.object({ id: z.number() }))
     .mutation(async ({ input, ctx }) => {
@@ -232,7 +222,6 @@ export const cartRouter = router({
 
     return 'stock_limit';
   }),
-
   deleteItem: protectedProcedure
     .input(z.object({ id: z.number() }))
     .mutation(async ({ input, ctx }) => {
@@ -248,4 +237,4 @@ export const cartRouter = router({
 
       return deletedItem;
     })
-});
+});     

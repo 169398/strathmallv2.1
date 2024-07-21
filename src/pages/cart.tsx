@@ -2,11 +2,11 @@ import Head from 'next/head';
 import { PageWithLayout } from '@/lib/types/page';
 import { ReactElement } from 'react';
 import Layout from '@/lib/components/Layouts/Layout';
-import { useSession, signOut } from 'next-auth/react';
-import Cart from '@/lib/components/Cart/Cart';
+import { useSession } from 'next-auth/react';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/pages/api/auth/[...nextauth]';
 import { GetServerSideProps } from 'next';
+import Cart from '@/lib/components/Cart/Cart';
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { req, res } = ctx;
@@ -22,12 +22,20 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
   }
 
   return {
-    props: {}
+    props: {} // You can return additional props here if needed
   };
 };
 
 const CartPage: PageWithLayout = () => {
   const { data: session, status } = useSession();
+
+  if (status === 'loading') {
+    return <div>Loading...</div>; // Optionally show a loading state
+  }
+
+  if (!session) {
+    return <div>Access denied. Please log in.</div>; // Optionally handle unauthorized access
+  }
 
   return (
     <div className="p-6 min-h-screen min-w-full text-white">
