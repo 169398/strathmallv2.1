@@ -3,10 +3,11 @@ import { PageWithLayout } from '@/lib/types/page';
 import { ReactElement } from 'react';
 import Layout from '@/lib/components/Layouts/Layout';
 import { useSession } from 'next-auth/react';
-import { getServerSession } from 'next-auth';
-import { authOptions } from '@/pages/api/auth/[...nextauth]';
 import { GetServerSideProps } from 'next';
 import Cart from '@/lib/components/Cart/Cart';
+import { trpc } from '@/utils/trpc';
+import { getServerSession } from 'next-auth';
+import { authOptions } from './api/auth/[...nextauth]';
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { req, res } = ctx;
@@ -22,19 +23,29 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
   }
 
   return {
-    props: {} // You can return additional props here if needed
+    props: {}
   };
 };
 
 const CartPage: PageWithLayout = () => {
   const { data: session, status } = useSession();
+  const {
+    data: cartItems,
+    isLoading: loadingCartItems,
+    error: cartItemsError
+  } = trpc.cart.getCartItems.useQuery();
+  const {
+    data: cartPrice,
+    isLoading: loadingCartPrice,
+    error: cartPriceError
+  } = trpc.cart.getCartItemsPrice.useQuery();
 
-  if (status === 'loading') {
-    return <div>Loading...</div>; // Optionally show a loading state
+  if (loadingCartItems || loadingCartPrice) {
+    return <div>Loading...</div>;
   }
 
-  if (!session) {
-    return <div>Access denied. Please log in.</div>; // Optionally handle unauthorized access
+  if (cartItemsError || cartPriceError) {
+    return <div>Error loading cart data</div>;
   }
 
   return (
@@ -45,7 +56,7 @@ const CartPage: PageWithLayout = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <Cart />
+      <Cart items={cartItems ?? []} price={cartPrice ?? '0'} />
     </div>
   );
 };
