@@ -1,3 +1,6 @@
+'use client';
+
+
 import { trpc } from '@/utils/trpc';
 import { Button, Title } from '@mantine/core';
 import { ItemsSelect } from './ItemsSelect';
