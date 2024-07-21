@@ -4,13 +4,13 @@ import { ReactElement } from 'react';
 import Layout from '@/lib/components/Layouts/Layout';
 import { useSession, signOut } from 'next-auth/react';
 import Cart from '@/lib/components/Cart/Cart';
-import { unstable_getServerSession } from 'next-auth';
+import { getServerSession } from 'next-auth';
 import { authOptions } from '@/pages/api/auth/[...nextauth]';
 import { GetServerSideProps } from 'next';
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { req, res } = ctx;
-  const session = await unstable_getServerSession(req, res, authOptions);
+  const session = await getServerSession(req, res, authOptions);
 
   if (!session) {
     return {
