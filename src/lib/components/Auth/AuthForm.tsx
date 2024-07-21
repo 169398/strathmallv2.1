@@ -26,7 +26,7 @@ interface LoginFormProps {
   isForSignUp: boolean;
 }
 
-let baseSchema = {
+const baseSchema = {
   username: z
     .string()
     .min(1, { message: 'Username cannot be empty' })
