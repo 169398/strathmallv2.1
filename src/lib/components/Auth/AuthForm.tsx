@@ -168,7 +168,7 @@ export function AuthForm({ title, buttonTitle, isForSignUp }: LoginFormProps) {
       <Paper className={classes.form} radius={0} p={30}>
         <Title order={2} className={classes.title} align="center" mt="md" mb={50}>
           <Link href="/">
-            <span className="font-logo text-6xl ">StrathMall</span>
+            <span className="font-logo text-6xl  text-blue-600">StrathMall</span>
           </Link>
         </Title>
 
@@ -206,7 +206,7 @@ export function AuthForm({ title, buttonTitle, isForSignUp }: LoginFormProps) {
             <span className="text-red-700">ⓘ {errors.password?.message}</span>
           )}
           <Checkbox label="Keep me logged in" mt="xl" size="md" />
-          <Button type="submit" className="bg-black hover:bg-slate-800" fullWidth mt="xl" size="md">
+          <Button type="submit" className="bg-blue hover:bg-slate-800" fullWidth mt="xl" size="md">
             {isLoading ? <Loader color="white" variant="dots" /> : buttonTitle}
           </Button>
         </form>
